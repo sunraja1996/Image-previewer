@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+          <h1>Image Previewer</h1>
+          <form id="imagelinkform">
+              <label for="imageurl">
+                  Paste an image url or drag and drop below!
+              </label>
+              <input type="url" 
+                     id="imageurl" 
+                     placeholder="http://mysite.com/image.jpg">
+              <button type="submit">Submit</button>
+          </form>
+          <hr>
+      
+          <input type="file" id="fileinput" accept="image/*" />
+          <label for="fileinput">
+            <div id="dropzone">
+              <p>Drop Image Here or Click to select a file!</p>
+            </div>
+          </label>
+        </div>
+        <div class="right"> 
+          <button id="cleargallery">Clear Images</button>
+          <div id="gallery"></div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
